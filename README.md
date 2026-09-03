@@ -2,13 +2,14 @@
 
 A small observability lab I built around my personal Minecraft server.
 
-The server runs NeoForge inside Docker on an Ubuntu Server 24.04 LTS VM hosted in Proxmox. I wanted some hands-on experience with observability tooling, so I set up a stack using Prometheus, Grafana, Loki, Alloy, cAdvisor, node_exporter, and mc-monitor.
+The server runs NeoForge inside Docker on an Ubuntu Server 24.04 LTS VM hosted in Proxmox. You can read more about my homelab [here](https://cjones.dev/homelab)
+I wanted some hands-on experience with observability tooling, so I set up a stack using Prometheus, Grafana, Loki, Alloy, cAdvisor, node_exporter, and mc-monitor.
 
 Everything is managed with Docker Compose.
 
 ## Architecture
 
-![Architecture Diagram](./mcserver-diagram.drawio.png)
+![Architecture Diagram](./docs/mcserver-diagram.drawio.png)
 
 The stack collects data from a few different layers:
 
